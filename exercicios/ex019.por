@@ -1,15 +1,16 @@
 programa
 {
-	inclua biblioteca Calendario --> cal
+	
 	funcao inicio()
 	{
-		inteiro ano, idade
-		escreva("Em que ano você nasceu? ")
-		leia(ano)
-		idade = cal.ano_atual() - ano
-		escreva("Você tem ",idade, " anos, certo? Seja bem vindo(a) ao Banco Estudonauta!\n")
-		se(idade >= 65){
-			escreva("=== ATENÇÃO! DIRIJA-SE PARA A FILA PREFERENCIAL! ===\n")
+		real num
+		escreva("Digite um número: ")
+		leia(num)
+		
+		se(num>0){
+			escreva("O inverso de ",num," é ",1/num)	
+		}senao{
+			escreva("O oposto de ",num," é ",num*(-1))
 		}
 	}
 }
@@ -18,7 +19,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 273; 
+ * @POSICAO-CURSOR = 203; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;

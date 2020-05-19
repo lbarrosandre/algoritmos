@@ -1,15 +1,15 @@
 programa
 {
-	inclua biblioteca Calendario --> cal
+	
 	funcao inicio()
 	{
-		inteiro ano, idade
-		escreva("Em que ano você nasceu? ")
+		inteiro ano
+		escreva("Digite um ano qualquer: ")
 		leia(ano)
-		idade = cal.ano_atual() - ano
-		escreva("Você tem ",idade, " anos, certo? Seja bem vindo(a) ao Banco Estudonauta!\n")
-		se(idade >= 65){
-			escreva("=== ATENÇÃO! DIRIJA-SE PARA A FILA PREFERENCIAL! ===\n")
+		se(ano%4 == 0 e ano%100 != 0 ou ano%400 == 0){
+		escreva("O ano ",ano," É BISSEXTO")	
+		}senao{
+		escreva("O ano ",ano," NÃO É BISSEXTO")
 		}
 	}
 }
@@ -18,7 +18,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 273; 
+ * @POSICAO-CURSOR = 173; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;

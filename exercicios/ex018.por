@@ -1,15 +1,16 @@
 programa
 {
-	inclua biblioteca Calendario --> cal
+	
 	funcao inicio()
 	{
-		inteiro ano, idade
-		escreva("Em que ano você nasceu? ")
-		leia(ano)
-		idade = cal.ano_atual() - ano
-		escreva("Você tem ",idade, " anos, certo? Seja bem vindo(a) ao Banco Estudonauta!\n")
-		se(idade >= 65){
-			escreva("=== ATENÇÃO! DIRIJA-SE PARA A FILA PREFERENCIAL! ===\n")
+		real dist
+		escreva("Informe a distância total da viagem, em Km: ")
+		leia(dist)
+
+		se(dist >= 200){
+			escreva("Uma viagem de ",dist," vai custar R$0.35/Km. Valor total: R$",dist*0.35)
+		}senao{
+			escreva("Uma viagem de ",dist," vai custar R$0.50/Km. Valor total: R$",dist*0.50)
 		}
 	}
 }
@@ -18,7 +19,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 273; 
+ * @POSICAO-CURSOR = 314; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
