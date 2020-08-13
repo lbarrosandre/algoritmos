@@ -30,15 +30,25 @@ programa
 			}
 		}escreva("\n   ---> Quantidade de ímpares: ",cont)
 		para(c = 0; c < 10; c++){
-			se(c == 1){
+			se(c == 0){
 				maior = dados[c]
 			}senao{
-				se(dados[c] > maior){
+				se(dados[c] >= maior){
 					maior = dados[c]
 				}
 			}
-		}escreva("\n---> Maior valor sorteado: ",maior)
+		}
+		para(c = 0; c < 10; c++){
+			se(dados[c] == maior)
+			cont2++
+		}
+		
+		escreva("\n---> Maior valor sorteado: ",maior)
 		escreva("\n   ---> Valor maior ocorreu nas posições: ")
+		para(c = 0; c < 10; c++){
+			se(dados[c] == maior)
+			escreva(c," ")
+		}
 		escreva("\n   ---> Total de ocorrências: ",cont2)
 	}
 }
@@ -47,7 +57,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 922; 
+ * @POSICAO-CURSOR = 1185; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
