@@ -17,13 +17,11 @@ programa
 			leia(salario[c])	
 		}limpa()
 		escreva("          LISTAGEM COMPLETA\n")
-		escreva("------------------------------------\n")
-		escreva("NOME              SEXO       SALÁRIO\n")
-		escreva("------------------------------------\n")
+		escreva("-----------------------------------------\n")
+		escreva("NOME                  SEXO     SALÁRIO\n")
+		escreva("-----------------------------------------\n")
 		para(c = 0; c < 6; c++){
-			escreva(nome[c])
-			escreva("             ",sexo[c])
-			escreva("         ",salario[c]," \n")
+			escreva(nome[c],"\t\t\t",sexo[c],"\t",salario[c],"\n")
 		}
 	}
 }
@@ -32,7 +30,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 64; 
+ * @POSICAO-CURSOR = 437; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
