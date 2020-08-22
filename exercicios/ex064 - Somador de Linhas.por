@@ -14,24 +14,36 @@ programa
 		}escreva("-----------------------------------------\n")
 		escreva("Somando a linha 0: ")
 		para(c = 0; c < u.numero_colunas(valor); c++){
-			escreva(valor[0][c], " + ")
+			se(c > 0){
+				escreva(" + ")
+			}
+			escreva(valor[0][c])
 			s0 += valor[0][c]
-		}escreva("= ",s0)
+		}escreva(" = ",s0)
 		escreva("\nSomando a linha 1: ")
 		para(c = 0; c < u.numero_colunas(valor); c++){
-			escreva(valor[1][c], " + ")
+			se(c > 0){
+				escreva(" + ")
+			}
+			escreva(valor[1][c])
 			s1 += valor[1][c]
-		}escreva("= ",s1)
+		}escreva(" = ",s1)
 		escreva("\nSomando a linha 2: ")
 		para(c = 0; c < u.numero_colunas(valor); c++){
-			escreva(valor[2][c], " + ")
+			se(c > 0){
+				escreva(" + ")
+			}
+			escreva(valor[2][c])
 			s2 += valor[2][c]
-		}escreva("= ",s2)
+		}escreva(" = ",s2)
 		escreva("\nSomando a linha 3: ")
 		para(c = 0; c < u.numero_colunas(valor); c++){
-			escreva(valor[3][c], " + ")
+			se(c > 0){
+				escreva(" + ")
+			}
+			escreva(valor[3][c])
 			s3 += valor[3][c]
-		}escreva("= ",s3)
+		}escreva(" = ",s3)
 		escreva("\n-----------------------------------------\n\n\n")
 	}
 }
@@ -40,7 +52,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 385; 
+ * @POSICAO-CURSOR = 1145; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = {valor, 6, 10, 5};
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
